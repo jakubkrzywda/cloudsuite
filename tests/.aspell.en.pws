@@ -40,6 +40,7 @@ GraphX
 PageRank
 dP
 hostname
+hostnames
 YCSB
 keyspace
 usertable
