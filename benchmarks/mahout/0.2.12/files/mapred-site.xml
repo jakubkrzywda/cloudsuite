@@ -7,14 +7,14 @@
   </property>
   <property>
     <name>mapreduce.map.memory.mb</name>
-    <value>8192</value>
+    <value>16384</value>
   </property>
   <property>
     <name>mapreduce.reduce.memory.mb</name>
-    <value>8192</value>
+    <value>16384</value>
   </property>
   <property>
     <name>mapred.child.java.opts</name>
-    <value>-Xmx8192M</value>
+    <value>-Xmx16384M</value>
   </property>
 </configuration>
