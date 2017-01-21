@@ -40,8 +40,8 @@ echo -e "${RED}Mahout: seq2sparse${RESET}"
 ${MAHOUT_HOME}/bin/mahout seq2sparse -i /user/root/wiki-seq -o /user/root/wiki-vectors -lnorm -nv -wt tfidf -ow -ng 2
 # Create training and holdout sets with a random 80-20 split of the generated vector dataset
 echo -e "${RED}Mahout: split${RESET}"
-${MAHOUT_HOME}/bin/mahout split -i /user/root/${WORK_DIR}/wiki-vectors/tfidf-vectors --trainingOutput /user/root/training \
-                                --testOutput  /user/root/testing -rp 20 -ow -seq -xm sequential
+${MAHOUT_HOME}/bin/mahout split -i /user/root/wiki-vectors/tfidf-vectors --trainingOutput /user/root/training \
+                                --testOutput /user/root/testing -rp 20 -ow -seq -xm sequential
 # Train Bayes model
 echo -e "${RED}Mahout: trainnb${RESET}"
 ${MAHOUT_HOME}/bin/mahout trainnb -i /user/root/training -o /user/root/model -li /user/root/labelindex -ow -c

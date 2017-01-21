@@ -24,3 +24,5 @@ COPY files/yarn-site.xml ${HADOOP_CONF_DIR}
 COPY files/hdfs-site.xml ${HADOOP_CONF_DIR}
 COPY files/core-site.xml ${HADOOP_CONF_DIR}
 
+# TODO: ???
+COPY files/hadoop-env.sh ${HADOOP_CONF_DIR}
