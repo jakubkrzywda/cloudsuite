@@ -1,7 +1,7 @@
 #!/bin/bash
 
-num_clients_per_machine=4
-min_num_sessions=100
+num_clients_per_machine=8
+min_num_sessions=500
 max_num_sessions=2000
 
 streaming_client_dir=..
